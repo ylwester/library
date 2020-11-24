@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Library</title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
 <div class="container">
@@ -11,9 +12,40 @@
         <h1>Library app</h1>
     </div>
     <div class="add-book">
-        <button>Add book</button>
+        <button data-modal-target="#modal">Add book</button>
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <div class="title">Details of book</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="add-book-form">
+                    <label>Author:
+                        <input type="text" id="book-author">
+                    </label><br>
+                    <label>Title:
+                        <input type="text" id="book-title">
+                    </label><br>
+                    <label>Number of pages:
+                        <input type="number" id="book-number">
+                    </label><br>
+                    <label>Did you read this?
+                        <input type="checkbox" id="book-read">
+                    </label><br>
+                    <button data-close-button id="book-submit" type="button" onclick="addBookToLibrary();">Add</button>
+                </form>
+            </div>
+        </div>
     </div>
-    <div class="display-books"></div>
+    <div class="display-books">
+
+    </div>
+</div>
+
+<div id="overlay">
+
 </div>
 </body>
+<script src="script.js"></script>
+<script src="Book.js"></script>
 </html>
