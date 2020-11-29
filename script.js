@@ -21,7 +21,7 @@ closeModalButtons.forEach(button => {
         const modal = button.closest('.modal');
         closeModal(modal);
     });
-})
+});
 
 function openModal(modal) {
     if(modal == null) return;

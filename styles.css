@@ -1,18 +1,32 @@
-body {
+body, html {
     width: 100%;
+    background-color: #EAECDB;
+    height: 100%;
+    min-height: 100% !important;
+    margin: 0;
+    padding: 0;
 }
+
+h1,p{margin:0 0 1em}
 
 .container {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 40%;
+    width: 50%;
     max-width: 80%;
-    margin-top: 3%;
+    height: 100%;
+    background-color: #7F7764;
+
+}
+h1{
+    margin: 0;
 }
 
 #logo {
     margin-bottom: 50px;
+    padding: 0;
+
 }
 
 
@@ -23,6 +37,16 @@ textarea:focus,
 button:focus {
     outline: none;
 }
+
+.display-books {
+  text-align: center;
+}
+
+.display-books .books-table {
+    padding: 10px;
+}
+
+
 
 .modal {
     position: fixed;
@@ -84,3 +108,4 @@ button:focus {
     pointer-events: all;
     opacity: 1;
 }
+
